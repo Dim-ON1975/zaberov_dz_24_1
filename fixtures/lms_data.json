@@ -1,0 +1,77 @@
+[
+  {
+    "model": "lms.course",
+    "pk": 1,
+    "fields": {
+      "creator": 1,
+      "title": "Python",
+      "description": "Python-разработчик",
+      "preview": ""
+    }
+  },
+  {
+    "model": "lms.course",
+    "pk": 2,
+    "fields": {
+      "creator": 1,
+      "title": "Java",
+      "description": "Java-разработчик",
+      "preview": ""
+    }
+  },
+  {
+    "model": "lms.lesson",
+    "pk": 1,
+    "fields": {
+      "course": 1,
+      "title": "Введение в Python",
+      "description": "Вводная тема",
+      "preview": "/media/python/1.jpeg",
+      "video_url": "http://127.0.0.1:8000/video/python/video_1.mp4"
+    }
+  },
+  {
+    "model": "lms.lesson",
+    "pk": 2,
+    "fields": {
+      "course": 1,
+      "title": "Основы Python",
+      "description": "Типы данных в Python",
+      "preview": "/media/python/2.png",
+      "video_url": "http://127.0.0.1:8000/video/python/video_2.mp4"
+    }
+  },
+  {
+    "model": "lms.lesson",
+    "pk": 3,
+    "fields": {
+      "course": 2,
+      "title": "Введение в Java",
+      "description": "Вводная тема Java",
+      "preview": "/media/java/1.png",
+      "video_url": "http://127.0.0.1:8000/video/java/video_1.png"
+    }
+  },
+  {
+    "model": "lms.lesson",
+    "pk": 4,
+    "fields": {
+      "course": 2,
+      "title": "Основы Java",
+      "description": "Форматы и типы данных",
+      "preview": "/media/java/2.png",
+      "video_url": "http://127.0.0.1:8000/video/java/video_2.mp4"
+    }
+  },
+  {
+    "model": "lms.lesson",
+    "pk": 5,
+    "fields": {
+      "course": 1,
+      "title": "Списки",
+      "description": "Списки в Python",
+      "preview": "/media/python/3.png",
+      "video_url": "http://127.0.0.1:8000/video/python/video_3.mp4"
+    }
+  }
+]
