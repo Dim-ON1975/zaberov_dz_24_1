@@ -1,101 +1,133 @@
 [
-  {
+{
     "model": "users.user",
     "pk": 1,
     "fields": {
-      "password": "123qwe456asd",
-      "last_login": "2024-03-08T21:00:00Z",
-      "is_superuser": true,
-      "first_name": "Дмитрий",
-      "last_name": "Заберов",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2024-03-08T21:00:00Z",
-      "email": "zaberov.dv@internet.ru",
-      "email_verify": true,
-      "phone": "+7 919 878-45-04",
-      "settlement": null,
-      "avatar": "",
-      "groups": [],
-      "user_permissions": []
+        "password": "pbkdf2_sha256$600000$Tp5EZE7iCIdiciTd0UBx6Z$eZ/wniW+jfq6a01sA3BovVkGcTzPk8GX2K0kgvlZ8bo=",
+        "last_login": "2024-03-17T15:22:23Z",
+        "is_superuser": false,
+        "first_name": "Дмитрий",
+        "last_name": "Заберов",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-03-08T21:00:00Z",
+        "email": "zaberov.dv@internet.ru",
+        "email_verify": true,
+        "phone": "+7 919 878-45-04",
+        "settlement": null,
+        "avatar": "",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
     }
-  },
-  {
+},
+{
     "model": "users.user",
     "pk": 2,
     "fields": {
-      "password": "123qwe456asd",
-      "last_login": "2024-03-09T17:30:00Z",
-      "is_superuser": false,
-      "first_name": "Иван",
-      "last_name": "Иванов",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2024-03-09T17:32:00Z",
-      "email": "zaberov.dv@gmail.com",
-      "email_verify": true,
-      "phone": "+7 925 345-45-24",
-      "settlement": null,
-      "avatar": "",
-      "groups": [],
-      "user_permissions": []
+        "password": "pbkdf2_sha256$600000$Tp5EZE7iCIdiciTd0UBx6Z$eZ/wniW+jfq6a01sA3BovVkGcTzPk8GX2K0kgvlZ8bo=",
+        "last_login": "2024-03-09T17:30:00Z",
+        "is_superuser": false,
+        "first_name": "Иван",
+        "last_name": "Иванов",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-03-09T17:32:00Z",
+        "email": "zaberov.dv@gmail.com",
+        "email_verify": true,
+        "phone": "+7 925 345-45-24",
+        "settlement": null,
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
     }
-  },
-  {
+},
+{
     "model": "users.user",
     "pk": 3,
     "fields": {
-      "password": "123qwe456asd",
-      "last_login": "2024-03-09T17:34:00Z",
-      "is_superuser": false,
-      "first_name": "Пётр",
-      "last_name": "Петров",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2024-03-09T17:35:00Z",
-      "email": "zaberov_dv@rambler.ru",
-      "email_verify": true,
-      "phone": "+7 865 345-34-45",
-      "settlement": null,
-      "avatar": "",
-      "groups": [],
-      "user_permissions": []
+        "password": "pbkdf2_sha256$600000$Tp5EZE7iCIdiciTd0UBx6Z$eZ/wniW+jfq6a01sA3BovVkGcTzPk8GX2K0kgvlZ8bo=",
+        "last_login": "2024-03-09T17:34:00Z",
+        "is_superuser": false,
+        "first_name": "Пётр",
+        "last_name": "Петров",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-03-09T17:35:00Z",
+        "email": "zaberov_dv@rambler.ru",
+        "email_verify": true,
+        "phone": "+7 865 345-34-45",
+        "settlement": null,
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
     }
-  },
-  {
-    "model": "users.payment",
-    "pk": 1,
+},
+{
+    "model": "users.user",
+    "pk": 7,
     "fields": {
-      "payer": 1,
-      "course_pay": 2,
-      "lesson_pay": null,
-      "date_pay": "2024-03-08",
-      "amount_pay": 35000,
-      "method_pay": "cash"
+        "password": "pbkdf2_sha256$600000$Tp5EZE7iCIdiciTd0UBx6Z$eZ/wniW+jfq6a01sA3BovVkGcTzPk8GX2K0kgvlZ8bo=",
+        "last_login": "2024-03-17T15:23:21.728Z",
+        "is_superuser": true,
+        "first_name": "Дмитрий",
+        "last_name": "Заберов",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-03-16T16:23:04Z",
+        "email": "zaberov.dv@yandex.ru",
+        "email_verify": true,
+        "phone": "+7 878 954-58-98",
+        "settlement": null,
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
     }
-  },
-  {
+},
+{
+    "model": "users.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$rBoW0teYlht47Glj2WJV0K$SZGoka3S4X6dZM/DOFnVoOekZ8LUt68GuyLgRGqcJ1U=",
+        "last_login": "2024-03-18T17:29:15Z",
+        "is_superuser": false,
+        "first_name": "Пётр",
+        "last_name": "Сидоров",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-03-17T14:59:01Z",
+        "email": "zaberov.dv@test.ru",
+        "email_verify": true,
+        "phone": "+7 568 985-45-89",
+        "settlement": "Константиновск",
+        "avatar": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
     "model": "users.payment",
     "pk": 2,
     "fields": {
-      "payer": 2,
-      "course_pay": 1,
-      "lesson_pay": 2,
-      "date_pay": "2024-03-08",
-      "amount_pay": 3000,
-      "method_pay": "transfer"
+        "payer": 1,
+        "course_pay": 1,
+        "lesson_pay": 2,
+        "date_pay": "2024-03-08",
+        "amount_pay": 3000,
+        "method_pay": "transfer"
     }
-  },
-  {
+},
+{
     "model": "users.payment",
     "pk": 3,
     "fields": {
-      "payer": 3,
-      "course_pay": 1,
-      "lesson_pay": null,
-      "date_pay": "2024-03-09",
-      "amount_pay": 45000,
-      "method_pay": "transfer"
+        "payer": 3,
+        "course_pay": 1,
+        "lesson_pay": null,
+        "date_pay": "2024-03-09",
+        "amount_pay": 45000,
+        "method_pay": "transfer"
     }
-  }
+}
 ]

@@ -1,77 +1,116 @@
 [
-  {
+{
     "model": "lms.course",
     "pk": 1,
     "fields": {
-      "creator": 1,
-      "title": "Python",
-      "description": "Python-разработчик",
-      "preview": ""
+        "creator": 7,
+        "title": "Python",
+        "description": "Python-разработчик",
+        "preview": ""
     }
-  },
-  {
+},
+{
     "model": "lms.course",
-    "pk": 2,
-    "fields": {
-      "creator": 1,
-      "title": "Java",
-      "description": "Java-разработчик",
-      "preview": ""
-    }
-  },
-  {
-    "model": "lms.lesson",
-    "pk": 1,
-    "fields": {
-      "course": 1,
-      "title": "Введение в Python",
-      "description": "Вводная тема",
-      "preview": "/media/python/1.jpeg",
-      "video_url": "http://127.0.0.1:8000/video/python/video_1.mp4"
-    }
-  },
-  {
-    "model": "lms.lesson",
-    "pk": 2,
-    "fields": {
-      "course": 1,
-      "title": "Основы Python",
-      "description": "Типы данных в Python",
-      "preview": "/media/python/2.png",
-      "video_url": "http://127.0.0.1:8000/video/python/video_2.mp4"
-    }
-  },
-  {
-    "model": "lms.lesson",
     "pk": 3,
     "fields": {
-      "course": 2,
-      "title": "Введение в Java",
-      "description": "Вводная тема Java",
-      "preview": "/media/java/1.png",
-      "video_url": "http://127.0.0.1:8000/video/java/video_1.png"
+        "creator": 3,
+        "title": ">Java<",
+        "description": "Java-разработчик",
+        "preview": ""
     }
-  },
-  {
-    "model": "lms.lesson",
-    "pk": 4,
+},
+{
+    "model": "lms.course",
+    "pk": 5,
     "fields": {
-      "course": 2,
-      "title": "Основы Java",
-      "description": "Форматы и типы данных",
-      "preview": "/media/java/2.png",
-      "video_url": "http://127.0.0.1:8000/video/java/video_2.mp4"
+        "creator": 3,
+        "title": "C++",
+        "description": "Разработка на C++",
+        "preview": ""
     }
-  },
-  {
+},
+{
+    "model": "lms.lesson",
+    "pk": 1,
+    "fields": {
+        "creator": 7,
+        "course": 1,
+        "title": "Введение в Python",
+        "description": "Вводная тема",
+        "preview": "http://127.0.0.1:8000/img/python/img_1.png",
+        "video_url": "http://127.0.0.1:8000/video/python/video_1.mp4"
+    }
+},
+{
+    "model": "lms.lesson",
+    "pk": 2,
+    "fields": {
+        "creator": 7,
+        "course": 1,
+        "title": "Основы Python - 3",
+        "description": "Урок об основах Python - 2",
+        "preview": "http://127.0.0.1:8000/img/python/img_2.png",
+        "video_url": "http://127.0.0.1:8000/lesson/video/video-1.mp4"
+    }
+},
+{
     "model": "lms.lesson",
     "pk": 5,
     "fields": {
-      "course": 1,
-      "title": "Списки",
-      "description": "Списки в Python",
-      "preview": "/media/python/3.png",
-      "video_url": "http://127.0.0.1:8000/video/python/video_3.mp4"
+        "creator": 3,
+        "course": 5,
+        "title": "Списки",
+        "description": "Списки в Python",
+        "preview": "http://127.0.0.1:8000/img/python/img_3.png",
+        "video_url": "http://127.0.0.1:8000/video/python/video_3.mp4"
     }
-  }
+},
+{
+    "model": "lms.lesson",
+    "pk": 6,
+    "fields": {
+        "creator": 7,
+        "course": 1,
+        "title": "Словари в Pyhton",
+        "description": "Работа со словарми",
+        "preview": "http://127.0.0.1:8000/img/python/img_4.png",
+        "video_url": "http://127.0.0.1:8000/video/python/video_4.mp4"
+    }
+},
+{
+    "model": "lms.lesson",
+    "pk": 10,
+    "fields": {
+        "creator": 12,
+        "course": 3,
+        "title": "Введение в Java_update",
+        "description": "Описание",
+        "preview": "http://127.0.0.1:8000/img/python/img_5.png",
+        "video_url": "http://127.0.0.1:8000/video/java/video_5.mp4"
+    }
+},
+{
+    "model": "lms.lesson",
+    "pk": 12,
+    "fields": {
+        "creator": 12,
+        "course": 3,
+        "title": "Типы данных в Java",
+        "description": "Описание",
+        "preview": "http://127.0.0.1:8000/img/python/img_7.png",
+        "video_url": "http://127.0.0.1:8000/video/java/video_7.mp4"
+    }
+},
+{
+    "model": "lms.lesson",
+    "pk": 17,
+    "fields": {
+        "creator": 3,
+        "course": 5,
+        "title": "Массивы в Java_put",
+        "description": "Описание_patch",
+        "preview": "",
+        "video_url": "http://127.0.0.1:8000/video/java/video_6.mp4"
+    }
+}
 ]
