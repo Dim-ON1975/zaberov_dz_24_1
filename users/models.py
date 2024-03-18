@@ -18,10 +18,6 @@ class User(AbstractUser):
     def __str__(self):
         return self.email
 
-    def natural_key(self):
-        """Для сериализации связанных данных"""
-        return self.pk, self.email, self.email_verify, self.phone, self.settlement, self.avatar
-
     class Meta:
         verbose_name = 'пользователь'
         verbose_name_plural = 'пользователи'

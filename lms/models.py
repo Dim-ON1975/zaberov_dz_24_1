@@ -22,7 +22,8 @@ class Course(models.Model):
 
 
 class Lesson(models.Model):
-    course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='курс')
+    creator = models.ForeignKey('users.User', on_delete=models.CASCADE, **NULLABLE, verbose_name='создатель')
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='курс', related_name='lesson')
     title = models.CharField(max_length=255, verbose_name='название')
     description = models.TextField(verbose_name='описание')
     preview = models.ImageField(upload_to='lms/lessons/previews/', **NULLABLE, verbose_name='логотип')

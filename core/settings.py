@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
+from datetime import timedelta
 from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 
@@ -42,8 +43,11 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'django_filters',
+    'rest_framework_simplejwt',
+
     'users',
     'lms',
+    'auth_api',
 ]
 
 MIDDLEWARE = [
@@ -139,9 +143,25 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Авторизация и аутентификация
 AUTH_USER_MODEL = 'users.User'
 
-# Фильтрация django-filter в rest-framework
+# Настройки rest-framework
 REST_FRAMEWORK = {
+    # Фильтрация django-filter в rest-framework
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
+    # Настройки JWT-токенов, аутентификация
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    # rest-framework - открытый доступ ко всем данным на сервере
+    # ограничения будем указывать в представлениях и др.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
+
+# Настройки срока действия токенов JWT
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=50),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
