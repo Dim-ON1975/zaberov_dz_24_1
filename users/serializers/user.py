@@ -1,8 +1,6 @@
 from django import forms
 from rest_framework import serializers
-
-from lms.models import Course
-from users.models import User, Payment
+from users.models import User
 from users.serializers.payment import PaymentSerializer
 
 
@@ -26,9 +24,4 @@ class UserSerializerList(serializers.ModelSerializer):
         fields = '__all__'
 
 
-# class UserLimitedSerializer(serializers.ModelSerializer):
-#     """Исключает отображение пароля и фамилии"""
-#
-#     class Meta:
-#         model = User
-#         exclude = ('password', 'last_name',)
+

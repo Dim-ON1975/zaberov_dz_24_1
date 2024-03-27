@@ -37,8 +37,8 @@
         "course": 1,
         "title": "Введение в Python",
         "description": "Вводная тема",
-        "preview": "http://127.0.0.1:8000/img/python/img_1.png",
-        "video_url": "http://127.0.0.1:8000/video/python/video_1.mp4"
+        "preview": "",
+        "video_url": "https://www.youtube.com/watch?v=34Rp6KVGIEM"
     }
 },
 {
@@ -49,8 +49,8 @@
         "course": 1,
         "title": "Основы Python - 3",
         "description": "Урок об основах Python - 2",
-        "preview": "http://127.0.0.1:8000/img/python/img_2.png",
-        "video_url": "http://127.0.0.1:8000/lesson/video/video-1.mp4"
+        "preview": "",
+        "video_url": "https://youtu.be/cKRRysbQZsM"
     }
 },
 {
@@ -61,8 +61,8 @@
         "course": 5,
         "title": "Списки",
         "description": "Списки в Python",
-        "preview": "http://127.0.0.1:8000/img/python/img_3.png",
-        "video_url": "http://127.0.0.1:8000/video/python/video_3.mp4"
+        "preview": "",
+        "video_url": "https://youtu.be/-X2ubBdP2Ak"
     }
 },
 {
@@ -72,9 +72,9 @@
         "creator": 7,
         "course": 1,
         "title": "Словари в Pyhton",
-        "description": "Работа со словарми",
-        "preview": "http://127.0.0.1:8000/img/python/img_4.png",
-        "video_url": "http://127.0.0.1:8000/video/python/video_4.mp4"
+        "description": "Работа со словарями",
+        "preview": "",
+        "video_url": "https://www.youtube.com/watch?v=W2oO1Y-QDzo"
     }
 },
 {
@@ -85,8 +85,8 @@
         "course": 3,
         "title": "Введение в Java_update",
         "description": "Описание",
-        "preview": "http://127.0.0.1:8000/img/python/img_5.png",
-        "video_url": "http://127.0.0.1:8000/video/java/video_5.mp4"
+        "preview": "",
+        "video_url": "https://youtu.be/fHl7UyRjOf0"
     }
 },
 {
@@ -97,8 +97,8 @@
         "course": 3,
         "title": "Типы данных в Java",
         "description": "Описание",
-        "preview": "http://127.0.0.1:8000/img/python/img_7.png",
-        "video_url": "http://127.0.0.1:8000/video/java/video_7.mp4"
+        "preview": "",
+        "video_url": "https://www.youtube.com/watch?v=g7jDucodUzQ"
     }
 },
 {
@@ -110,7 +110,71 @@
         "title": "Массивы в Java_put",
         "description": "Описание_patch",
         "preview": "",
-        "video_url": "http://127.0.0.1:8000/video/java/video_6.mp4"
+        "video_url": "https://youtu.be/GULFKAX0nxY"
+    }
+},
+{
+    "model": "lms.lesson",
+    "pk": 18,
+    "fields": {
+        "creator": 7,
+        "course": 5,
+        "title": "Новые методы массивов в JS",
+        "description": "Описание новых методов массивов",
+        "preview": "",
+        "video_url": "https://youtu.be/WPmPgzgNfDU"
+    }
+},
+{
+    "model": "lms.lesson",
+    "pk": 19,
+    "fields": {
+        "creator": 7,
+        "course": 5,
+        "title": "Новые методы массивов в JS_",
+        "description": "Описание новых методов массивов_",
+        "preview": "",
+        "video_url": "https://www.youtube.com/watch?v=WPmPgzgNfDU"
+    }
+},
+{
+    "model": "lms.subscription",
+    "pk": 2,
+    "fields": {
+        "subscriber": 12,
+        "course": 1
+    }
+},
+{
+    "model": "lms.subscription",
+    "pk": 4,
+    "fields": {
+        "subscriber": 12,
+        "course": 5
+    }
+},
+{
+    "model": "lms.subscription",
+    "pk": 5,
+    "fields": {
+        "subscriber": 2,
+        "course": 3
+    }
+},
+{
+    "model": "lms.subscription",
+    "pk": 6,
+    "fields": {
+        "subscriber": 2,
+        "course": 1
+    }
+},
+{
+    "model": "lms.subscription",
+    "pk": 8,
+    "fields": {
+        "subscriber": 7,
+        "course": 1
     }
 }
 ]

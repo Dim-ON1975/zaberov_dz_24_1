@@ -155,9 +155,15 @@ REST_FRAMEWORK = {
     ),
     # rest-framework - открытый доступ ко всем данным на сервере
     # ограничения будем указывать в представлениях и др.
-    'DEFAULT_PERMISSION_CLASSES': [
+    'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
-    ]
+    ),
+    # Парсеры
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser'
+    )
 }
 
 # Настройки срока действия токенов JWT

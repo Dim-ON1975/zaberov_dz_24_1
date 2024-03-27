@@ -12,10 +12,6 @@ class Course(models.Model):
     def __str__(self):
         return self.title
 
-    def natural_key(self):
-        """Для сериализации связанных данных"""
-        return self.pk, self.creator, self.title, self.description, self.preview
-
     class Meta:
         verbose_name = 'курс'
         verbose_name_plural = 'курсы'
@@ -32,10 +28,21 @@ class Lesson(models.Model):
     def __str__(self):
         return f'{self.course}: {self.title}'
 
-    def natural_key(self):
-        """Для сериализации связанных данных"""
-        return self.pk, self.course, self.title, self.description, self.preview, self.video_url
-
     class Meta:
         verbose_name = 'урок'
         verbose_name_plural = 'уроки'
+
+
+class Subscription(models.Model):
+    """ Модель подписки пользователя на курс """
+    subscriber = models.ForeignKey('users.User', on_delete=models.CASCADE, **NULLABLE, verbose_name='подписчик',
+                                   related_name='subscriber')
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='курс', **NULLABLE,
+                               related_name='subscription')
+
+    def __str__(self):
+        return f'{self.subscriber}: {self.course}'
+
+    class Meta:
+        verbose_name = 'подписка'
+        verbose_name_plural = 'подписки'

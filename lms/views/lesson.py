@@ -1,6 +1,7 @@
 from rest_framework import generics
 
 from lms.models import Lesson
+from lms.paginators import LmsPaginator
 from lms.permissions import IsModerator, IsCreator
 from lms.serializers.lesson import LessonSerializer
 from rest_framework.permissions import IsAuthenticated
@@ -10,6 +11,7 @@ class LessonSerializeListAPIView(generics.ListAPIView):
     serializer_class = LessonSerializer
     queryset = Lesson.objects.all()
     permission_classes = [IsAuthenticated, IsModerator | IsCreator]
+    pagination_class = LmsPaginator
 
 
 class LessonSerializeRetrieveAPIView(generics.RetrieveAPIView):

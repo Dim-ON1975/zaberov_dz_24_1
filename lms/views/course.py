@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from lms.models import Course
+from lms.paginators import LmsPaginator
 from lms.permissions import IsModerator, IsCreator
 from lms.serializers.course import CourseSerializer
 
@@ -9,6 +10,7 @@ class CourseViewSet(viewsets.ModelViewSet):
     serializer_class = CourseSerializer
     queryset = Course.objects.all()
     permission_classes = [IsAuthenticated]
+    pagination_class = LmsPaginator
 
     def perform_create(self, serializer):
         """Привязка пользователя к создаваемому курсу"""
